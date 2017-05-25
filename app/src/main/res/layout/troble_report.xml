@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/title"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="70dp"
+    android:background="#f3548235"
+    android:text="자전거 상태"
+    android:textColor="#FFFFFF"
+    android:textSize="50sp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/black_box">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="고장 유형"
+                    android:textSize="25sp"/>
+                <RelativeLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 체인"/>
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:layout_below="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 안장"/>
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        android:layout_below="@+id/checkbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 벨"/>
+                    <CheckBox
+                        android:id="@+id/checkbox4"
+                        android:layout_below="@+id/checkbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 자물쇠"/>
+                    <CheckBox
+                        android:id="@+id/checkbox5"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/checkbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 브레이크"/>
+                    <CheckBox
+                        android:id="@+id/checkbox6"
+                        android:layout_below="@+id/checkbox5"
+                        android:layout_toRightOf="@+id/checkbox1"
+                        android:layout_alignLeft="@+id/checkbox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 라이트"/>
+                    <CheckBox
+                        android:id="@+id/checkbox7"
+                        android:layout_below="@+id/checkbox6"
+                        android:layout_toRightOf="@+id/checkbox1"
+                        android:layout_alignLeft="@+id/checkbox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 바구니"/>
+                    <CheckBox
+                        android:id="@+id/checkbox8"
+                        android:layout_below="@+id/checkbox7"
+                        android:layout_toRightOf="@+id/checkbox1"
+                        android:layout_alignLeft="@+id/checkbox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 바퀴"/>
+                    <CheckBox
+                        android:id="@+id/checkbox9"
+                        android:layout_below="@+id/checkbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text=" 기타 : "/>
+                    <EditText
+                        android:id="@+id/etc"
+                        android:layout_alignBottom="@id/checkbox9"
+                        android:layout_below="@+id/checkbox8"
+                        android:layout_toRightOf="@+id/checkbox9"
+                        android:layout_alignRight="@+id/checkbox5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자세한 증상을 작성해주세요"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="20dp"/>
+                <EditText
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="고장신고"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:background="#a9d18e"
+                android:layout_margin="20dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

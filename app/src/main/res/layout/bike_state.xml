@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/title"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="70dp"
+    android:background="#f3548235"
+    android:text="자전거 조회"
+    android:textColor="#FFFFFF"
+    android:textSize="50sp"/>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search100"/>
+        <EditText
+            android:layout_toRightOf="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/search_back"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="30dp"
+            android:background="@drawable/black_box">
+            <TextView
+                android:id="@+id/bike_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-35번 자전거-"
+                android:textSize="25sp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_below="@+id/bike_name"
+                android:id="@+id/bike_trouble_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:text="고장 유형 : 브레이크"/>
+            <TextView
+                android:layout_below="@id/bike_trouble_part"
+                android:id="@+id/bike_trouble_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="자전거 브레이크\n왼쪽이 안됩니다"/>
+            <TextView
+                android:layout_below="@id/bike_trouble_detail"
+                android:id="@+id/soon_bike_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:textColor="#548235"
+                android:text="10분전"/>
+        </RelativeLayout>
+
+</LinearLayout>

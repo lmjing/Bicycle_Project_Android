@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/edit_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="자전거 고유 번호 입력"
+        android:gravity="center_horizontal"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/btn_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_marginBottom="50dp"/>
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0번째 갱신중"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="멈추기(도착)"
+        android:layout_marginBottom="50dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtTotalDistance"
+    android:text="TotalDistance : 0"
+    android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTotalTime"
+        android:text="TotalTime : 0"
+        android:textSize="25sp"/>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp">
+
+    <RelativeLayout
+        android:padding="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/main_card">
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공공 자전거"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/two"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Bike"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/splash"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/using"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="이미정 회원님"/>
+            <TextView
+                android:id="@+id/using"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp "
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/menu1"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="자전거\n대여"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:background="@drawable/btn"/>
+        <Button
+            android:id="@+id/menu2"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="정류장\n찾기"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:background="@drawable/btn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:id="@+id/menu3"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="푸시\n알람"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:background="@drawable/btn"/>
+        <Button
+            android:id="@+id/menu4"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="자동 로그인\n해제"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:background="@drawable/btn"/>
+    </LinearLayout>
+
+</LinearLayout>

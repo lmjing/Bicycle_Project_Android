@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="#ddd1e8b9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/search_bar">
+
+            <AutoCompleteTextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:id="@+id/editTextQuery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="대여소 검색"
+                android:textColor="#b0b2b4"
+                android:ems="10" />
+
+            <requestFocus />
+            <ImageView
+                android:id="@+id/buttonSearch"
+                android:layout_width="10dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_vertical"
+                android:src ="@drawable/search"/>
+
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6cbbe291">
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnShowLocation"
+            android:background="@drawable/refresh"
+            android:longClickable="false"
+            android:allowUndo="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+        <SlidingDrawer
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:handle="@+id/handle"
+            android:content="@+id/content"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/tumyeong"/>
+            <LinearLayout
+                android:id="@+id/content"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000"
+                >
+                <LinearLayout
+                    android:id="@+id/station_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/bike_recommend_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="도착 예정 정보"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="15dp"/>
+                        <TextView
+                            android:id="@+id/arrive_bike1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="17번 자전거"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                android:id="@+id/arrive_bike1_time1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="> "
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:id="@+id/arrive_bike1_time2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                android:textSize="20sp"
+                                android:textColor="#95ccf5"/>
+                            <TextView
+                                android:id="@+id/arrive_bike1_time3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="분 후 도착"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/arrive_bike2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70번 자전거"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/arrive_bike2_time1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="> "
+                                android:textStyle="bold"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:id="@+id/arrive_bike2_time2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15"
+                                android:textSize="20sp"
+                                android:textColor="#95ccf5"/>
+                            <TextView
+                                android:id="@+id/arrive_bike2_time3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="분 후 도착"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/bike_arrive_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="자전거 추천"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="15dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:id="@+id/recommend_bike1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="17번 자전거"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/recommend_bike1_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 95점"
+                                android:textSize="18sp"
+                                android:textColor="#f693a4"/>
+                            <TextView
+                                android:id="@+id/recommend_bike1_rate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/100점"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/recommend_bike1_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="바퀴 바람이 조금 약해요"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="10dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:id="@+id/recommend_bike2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="70번 자전거"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/recommend_bike2_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100점"
+                                android:textSize="18sp"
+                                android:textColor="#f693a4"/>
+                            <TextView
+                                android:id="@+id/recommend_bike2_rate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/100점"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/recommend_bike2_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="18sp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+
+    </RelativeLayout>
+
+</LinearLayout>

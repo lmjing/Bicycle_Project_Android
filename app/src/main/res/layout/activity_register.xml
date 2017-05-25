@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9e8dd"
+    tools:context=".LoginActivity" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"/>
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/title"
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID "
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"/>
+        <EditText
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/text_id"
+            android:id="@+id/userId"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/join_border"
+            android:ems="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:hint="아이디" />
+
+    <TextView
+        android:layout_alignRight="@+id/text_id"
+        android:layout_below="@+id/text_id"
+        android:id="@+id/text_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW "
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_below="@+id/text_id"
+        android:layout_toRightOf="@+id/text_pw"
+        android:id="@+id/userPass"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/join_border"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:hint="비밀번호" />
+
+    <TextView
+    android:layout_alignRight="@+id/text_id"
+    android:layout_below="@+id/text_pw"
+    android:id="@+id/text_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NAME "
+    android:textSize="25dp"
+    android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_below="@+id/text_pw"
+        android:layout_toRightOf="@+id/text_name"
+        android:id="@+id/userName"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/join_border"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:hint="이름" />
+
+    <TextView
+        android:layout_alignRight="@+id/text_id"
+        android:layout_below="@+id/text_name"
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE "
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+    android:layout_below="@+id/text_name"
+    android:layout_toRightOf="@+id/text_phone"
+    android:id="@+id/userPhone1"
+    android:layout_width="62dp"
+    android:layout_height="30dp"
+    android:background="@drawable/join_border"
+    android:gravity="center"
+    android:singleLine="true"
+    android:layout_marginRight="7dp"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_below="@+id/text_name"
+        android:layout_toRightOf="@+id/userPhone1"
+        android:id="@+id/userPhone2"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
+        android:background="@drawable/join_border"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginRight="7dp"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_below="@+id/text_name"
+        android:layout_toRightOf="@+id/userPhone2"
+        android:id="@+id/userPhone3"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
+        android:background="@drawable/join_border"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="phone"/>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:background="@drawable/btn"/>
+
+
+</RelativeLayout>
